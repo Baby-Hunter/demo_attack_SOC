@@ -3,8 +3,7 @@ Dự án mô phỏng chuỗi hành vi tấn công trên hệ thống Linux, tron
 
 Kẻ tấn công sau khi có quyền truy cập vào máy mục tiêu sẽ tải và thực thi một script được lưu trữ trên GitHub.
 Script thực hiện các hành vi mô phỏng malware, bao gồm:
-
--Download and Execute Payload: Tải và thực thi payload từ Internet.
+-Download and Execute Payload: Tải và thực thi payload từ Internet. 
 -Establish Persistence via systemd: Tạo user service nhằm duy trì khả năng thực thi tự động trên hệ thống.
 -Establish Persistence via cron: Thiết lập cron job để tải và thực thi script từ xa định kỳ 5 phút một lần.
 -Exfiltrate Sensitive Information: Gửi nội dung tệp /etc/passwd đến máy chủ bên ngoài thông qua HTTP POST.
